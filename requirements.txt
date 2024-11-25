@@ -1,0 +1,5 @@
+Flask
+gunicorn
+vertexai
+google-cloud
+google-oauth2-tool

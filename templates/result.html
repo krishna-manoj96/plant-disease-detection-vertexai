@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+
+    <h3>Plant Name:</h3>
+    <p>{{ prediction['plant_name'] }}</p>
+
+    <h3>Disease Name:</h3>
+    <p>{{ prediction['disease_name'] }}</p>
+
+    <h3>Remediation:</h3>
+    <ul>
+        {% for key, remediation in prediction['remediation'].items() %}
+            <li><strong>{{ key }}:</strong> {{ remediation }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
