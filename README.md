@@ -7,7 +7,6 @@ This repository contains a Flask web application for detecting plant diseases fr
 - **Image Upload:** Users can upload images of plant leaves through a user-friendly web interface.
 - **Cloud Integration:** Images are uploaded to Google Cloud Storage for processing.
 - **AI-powered Prediction:** Uses Vertex AI's GenerativeModel to identify plant diseases and provide remediation steps.
-- **Error Handling:** Displays user-friendly error messages for unexpected issues.
 
 ---
 
@@ -50,3 +49,15 @@ pip install requirements.txt
 ```bash
 python app.py
 ```
+
+## Output Reference
+#### Upload.html 
+![image](https://github.com/user-attachments/assets/e4c0ca33-bc2c-4a05-ae72-a5d9b6d71ee2)
+
+#### result.html
+
+![image](https://github.com/user-attachments/assets/94d3c75a-d07d-4d73-ac57-7c3d5cc8b4b2)
+
+
+
+
