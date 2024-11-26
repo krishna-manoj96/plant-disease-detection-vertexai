@@ -12,6 +12,8 @@ This repository contains a Flask web application for detecting plant diseases fr
 
 ## Documentation
 
+Meduim Link : [[Plant Disease Detection](https://medium.com/@vandavasi.manoj/building-a-plant-disease-detection-web-app-with-flask-vertex-ai-and-google-cloud-0ffc6bae422d)]
+
 
 ## Live Demo
 The live application can be tested out in this URL: [[Link](https://plant-disease-detection-268625998399.us-central1.run.app/)]
