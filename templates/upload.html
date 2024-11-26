@@ -1,13 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Upload Image</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plant Disease Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            margin: 100px auto;
+            max-width: 600px;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #343a40;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        label {
+            font-size: 16px;
+            color: #495057;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input[type="file"] {
+            font-size: 16px;
+            padding: 8px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        input[type="submit"] {
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #6c757d;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Upload Image</h1>
-    <form method="POST" enctype="multipart/form-data">
-        <input type="file" name="file">
-        <input type="submit" value="Upload">
-    </form>
+
+    <div class="container">
+        <h1>Plant Disease Detection</h1>
+
+        <form method="POST" enctype="multipart/form-data" action="/">
+            <div class="form-group">
+                <label for="image-upload">Upload Plant Leaf Image:</label>
+                <input type="file" name="file" id="image-upload" accept="image/*" required>
+            </div>
+            <input type="submit" value="Detect Disease">
+        </form>
+
+        <div class="footer">
+            <p>Ensure your file is in a valid format (e.g., .jpg, .png). The maximum file size is 5MB.</p>
+        </div>
+    </div>
+
 </body>
 </html>
