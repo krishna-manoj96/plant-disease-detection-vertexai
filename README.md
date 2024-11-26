@@ -32,6 +32,8 @@ The live application can be tested out in this URL: [[Link](https://plant-diseas
 - **Service Account JSON Keys**:
   - `gcp_storage.json` for authenticating with Google Cloud Storage, you can download this from Cloud console IAM.
   - `plant-disease-vertex-api.json` for authenticating with Vertex AI,this needs to be created, you can download this from Cloud console IAM.
+- Place gcp_storage.json and plant-disease-vertex-api.json in the root folder.
+- Ensure the Google Cloud Storage bucket is configured, and replace bucket_name in app.py with your actual bucket name.
 
 ### Step 1: Clone the Repository
 ```bash
